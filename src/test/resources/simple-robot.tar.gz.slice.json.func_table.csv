@@ -1,0 +1,7 @@
+id	func_name	kind	file_path	declare_range
+0e30ee7a	main	user-defined	temp/app.c	18-41
+ed7ede32	run_actuator	user-defined	temp/actuator.c	5-9
+ac768e48	initialize	user-defined	temp/app.c	11-16
+35b44899	fetch_sensor_value	user-defined	temp/sensor.c	4-9
+65a13216	validate	user-defined	temp/control.c	8-18
+93a9a72b	control	user-defined	temp/control.c	20-27

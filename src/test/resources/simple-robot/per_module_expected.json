@@ -1,0 +1,28 @@
+[
+  {
+    "mod": "INITIALIZER",
+    "edges": [
+      "-> g_actuator_output.power"
+    ]
+  },
+  {
+    "mod": "SENSOR",
+    "edges": [
+      "-> g_sensor_input.value",
+      "-> g_sensor_input.value"
+    ]
+  },
+  {
+    "mod": "CONTROLLER",
+    "edges": [
+      "g_sensor_input.value -> correct_value",
+      "correct_value -> g_actuator_output.power"
+    ]
+  },
+  {
+    "mod": "ACTUATOR",
+    "edges": [
+      "g_actuator_output.power -> power"
+    ]
+  }
+]

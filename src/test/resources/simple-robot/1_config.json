@@ -1,0 +1,27 @@
+{
+    "project_name": "simple-robot",
+    "entry_point_func_name": "main",
+    "target_variables": [
+        "g_sensor_input",
+        "g_actuator_output"
+    ],
+    "module_mappings": [
+        {
+            "name": "INITIALIZER",
+            "map_to": "initialize"
+        },
+        {
+            "name": "SENSOR",
+            "map_to": "fetch_sensor_value"
+        },
+        {
+            "name": "CONTROLLER",
+            "map_to": "control"
+        },
+        {
+            "name": "ACTUATOR",
+            "map_to": "run_actuator"
+        }
+    ],
+    "controls": []
+}

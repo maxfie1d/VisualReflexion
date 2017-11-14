@@ -1,0 +1,5 @@
+{
+    "controls": "id\tfile\tcontrol_range\tcontrol_vars\n7c9c05e6\tissue42.c\t12..23\t056480f6\nc0d8f1f7\tissue42.c\t15..19..22\tfe88ea9f\n",
+    "funcs": "id\tfunc_name\tkind\tfile_path\tdeclare_range\ncf73b111\tmain\tuser-defined\tissue42.c\t8-26\n",
+    "vars": "id\tfile\tfunc\tvar\tdef\tuse\tdvars\tcfuncs\n056480f6\tissue42.c:1\t__GLOBAL__\tint a\t1@__GLOBAL__,10@cf73b111\t12@cf73b111,14@cf73b111\tb(219283d1)\t\n219283d1\tissue42.c:2\t__GLOBAL__\tint b\t2@__GLOBAL__,14@cf73b111\t17@cf73b111\td(4aedf3f6)\t\nfe88ea9f\tissue42.c:3\t__GLOBAL__\tint c\t3@__GLOBAL__,11@cf73b111\t15@cf73b111\t\t\n4aedf3f6\tissue42.c:4\t__GLOBAL__\tint d\t4@__GLOBAL__,17@cf73b111\t\t\t\n6195ca55\tissue42.c:5\t__GLOBAL__\tint e\t5@__GLOBAL__,21@cf73b111\t\t\t\nca342d1a\tissue42.c:6\t__GLOBAL__\tint f\t6@__GLOBAL__\t\t\t\n"
+}

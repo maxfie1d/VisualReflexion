@@ -1,0 +1,25 @@
+{
+    "project_name": "ControlDependence",
+    "entry_point_func_name": "main",
+    "target_variables": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f"
+    ],
+    "module_mappings": [
+        {
+            "name": "MAIN",
+            "map_to": "main"
+        }
+    ],
+    "controls": [
+        {
+            "file": "issue42.c",
+            "line_number": 12,
+            "value": false
+        }
+    ]
+}

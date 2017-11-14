@@ -1,8 +1,5 @@
-group 'com.naochan'
-version '1.0-SNAPSHOT'
-
 buildscript {
-    ext.kotlin_version = '1.1.4-3'
+    ext.kotlin_version = '1.3.11'
 
     repositories {
         mavenCentral()
@@ -15,15 +12,18 @@ buildscript {
 apply plugin: 'java'
 apply plugin: 'kotlin'
 
-sourceCompatibility = 1.8
-
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    compile "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlin_version"
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    compile "com.google.code.gson:gson:2.8.2"
+    compile group: 'commons-cli', name: 'commons-cli', version: '1.4'
     testCompile group: 'junit', name: 'junit', version: '4.12'
+
+    // Include Understand API jar file
+    compile fileTree(dir: 'C:\\Program Files\\SciTools\\bin\\pc-win64\\Java', include: '*.jar')
 }
 
 compileKotlin {
@@ -31,4 +31,13 @@ compileKotlin {
 }
 compileTestKotlin {
     kotlinOptions.jvmTarget = "1.8"
+}
+
+task fatJar(type: Jar) {
+    manifest {
+        attributes 'Main-Class': 'app.MainKt'
+    }
+
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
 }
