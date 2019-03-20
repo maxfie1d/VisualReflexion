@@ -32,7 +32,7 @@ class Project(
         get() = this.config.projectName
 
     val controlDataList: List<ConditionData>
-        get() = this.config.controls
+        get() = this.config.controls ?: emptyList()
 
     init {
         this.moduleDefs = config.moduleMappings

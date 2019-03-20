@@ -42,5 +42,5 @@ data class AnalysisConfig(
         val moduleMappings: List<ModuleMapping>,
 
         @SerializedName("controls")
-        val controls: List<ConditionData>
+        val controls: List<ConditionData>?
 )
